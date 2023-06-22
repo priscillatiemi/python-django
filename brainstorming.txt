@@ -1,0 +1,16 @@
+É uma plataforma de serviços em geral
+no qual o usuário pode tanto buscar serviços
+quanto ofertar serviços. 
+Exemplos: Usuário1 buscando serviços de tecnologia.
+Usuário2 ofertando serviços de TI,redes e etc...
+Usuário1 entra em contato com Usuário2 e faz uma reserva
+pela plataforma para determinado serviço. Na reserva é 
+descrita horário, valor, etc...
+A plataforma serve como um intermediário entre os usuários.
+Pode ser serviços presenciais e remotos. 
+
+
+Um site estilo buscapé que consolida preços, serviços, 
+busca de restaurantes por região, como se fosse um buscapé.
+Ranking interno com serviços, preços melhores avaliados
+Ex: Trivago
