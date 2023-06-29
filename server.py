@@ -29,14 +29,44 @@ class SimpleHandler(BaseHTTPRequestHandler):
             self.send_response(200)
             self.send_header("Content-type","text/html; charset=utf-8")
             self.end_headers()
+
+            stylesheet = """
+            <style>
+                table {
+                    border-collapse: collapse;
+                }
+
+                td, th {
+                    border: 1px solid #dddddd;
+                    text-align: left;
+                    padding: 10px;
+                }
+            </style>
+            """
+
             eventos_html = ""
             for ev in eventos:
-                eventos_html += f"<p>{ev.id} {ev.nome} {ev.local}</p>"
+                eventos_html += f"""
+                <tr>
+                    <td>{ev.id}</td>
+                    <td>{ev.nome}</td>
+                    <td>{ev.local}</td>
+                </tr>
+                """
             data = f"""
             <html>
-            {eventos_html}
+                <head>{stylesheet}</head>
+                <table>
+                
+                    <tr>
+                        <th>Id</th>
+                        <th>Nome</th>
+                        <th>Local</th>
+                    </tr>
+                        {eventos_html}
+                </table>
             </html>
-            """.encode()
+            """.encode() 
             self.wfile.write(data)
 server = HTTPServer(('localhost',8000),SimpleHandler)
 server.serve_forever()
