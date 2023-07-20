@@ -1,0 +1,27 @@
+[
+    {
+        "id": 3,
+        "nome": "Live de Python",
+        "local": "https://tamarcado.com/eventos?id=3"
+    },
+    {
+        "id": 4,
+        "nome": "Live de Javascript",
+        "local": "https://tamarcado.com/eventos?id=4"
+    },
+    {
+        "id": 5,
+        "nome": "aula de python",
+        "local": "Sao paulo"
+    },
+    {
+        "id": 3,
+        "nome": "Live de Python",
+        "local": "https://tamarcado.com/eventos?id=3"
+    },
+    {
+        "id": 4,
+        "nome": "Live de Javascript",
+        "local": "https://tamarcado.com/eventos?id=4"
+    }
+]
